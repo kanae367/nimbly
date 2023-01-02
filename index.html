@@ -12,46 +12,46 @@
     </head>
     <body>
         <div class="body">
-            <header class="header">
-                <div class="topbar">
-                    <img class="topbar__logo" src="images/logo-header.svg" alt="Nimbly">
-                    <nav class="topbar__nav-bar">
-                        <a class="topbar__link" href="#features">Features</a>
-                        <a class="topbar__link" href="#howitworks">How it works</a>
-                        <a class="topbar__link" href="#industries">Industries</a>
-                        <a class="topbar__link" href="#insight">Insight</a>
-                    </nav>
-                    <a class="topbar__login" href="#">
-                        <svg class="topbar__login-image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_32_1873)">
-                                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#13AB4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M6 21V19C6 17.9391 6.42143 16.9217 7.17157 16.1716C7.92172 15.4214 8.93913 15 10 15H14C15.0609 15 16.0783 15.4214 16.8284 16.1716C17.5786 16.9217 18 17.9391 18 19V21" stroke="#13AB4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_32_1873">
-                                    <rect width="24" height="24" fill="white"/>
-                                </clipPath>
-                            </defs> 
-                        </svg>
-                        <p class="topbar__link">Sign in</p>
-                    </a>
-                    <button class="request-button">Request Demo</button>
-                </div>
+            <header class="topbar">
+                <img class="topbar__logo" src="images/logo-header.svg" alt="Nimbly">
+                <nav class="topbar__nav">
+                    <a class="topbar__link" href="#features">Features</a>
+                    <a class="topbar__link" href="#howitworks">How it works</a>
+                    <a class="topbar__link" href="#industries">Industries</a>
+                    <a class="topbar__link" href="#insight">Insight</a>
+                </nav>
+                <a class="topbar__login" href="#">
+                    <svg class="topbar__login-image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_32_1873)">
+                            <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#13AB4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 21V19C6 17.9391 6.42143 16.9217 7.17157 16.1716C7.92172 15.4214 8.93913 15 10 15H14C15.0609 15 16.0783 15.4214 16.8284 16.1716C17.5786 16.9217 18 17.9391 18 19V21" stroke="#13AB4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_32_1873">
+                                <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs> 
+                    </svg>
+                    <p class="topbar__link">Sign in</p>
+                </a>
+                <button class="request-button">Request Demo</button>
             </header>
 
             <main class="main">
                 <section class="about" id="about"> 
-                    <h1 class="subtitle">
+                    <h3 class="subtitle">
                         Make your operations Easier and Efficient with <span class="about__span-accent">Nimbly</span>
-                    </h1>
+                    </h3>
                     <p class="paragraph">
                         Digitize your business operations and gain real-time analytics on your team progress anytime, anywhere.
                     </p>
                     <button class="request-button">Request Demo</button>
-                    <a class="about__consultation" href="#">
-                        <img class="about__consultation-image" src="images/phone.svg" alt="phone image">
-                        <p class="about__consultation-text">Free Consultation</p>
-                    </a>
+                    <div class="about__container">
+                        <a class="about__consultation" href="#">
+                            <img class="about__consultation-image" src="images/phone.svg" alt="phone image">
+                            <p class="about__consultation-text">Free Consultation</p>
+                        </a>
+                    </div>
                     <img class="about__image" src="images/header-image.png" alt="app">
                     <div class="clients">
                         <p class="clients__paragraph">
@@ -66,6 +66,9 @@
                             <img class="clients__logo" src="images/toto-logo.svg" alt="toto">
                         </div>
                     </div>
+                </section>
+
+                <section class="video">
                     <h2 class="title">WAYS NIMBLY HELPS YOU</h2>
                     <h3 class="subtitle">
                         Helping you maximize operations management with digitization
@@ -169,33 +172,35 @@
                 </section>
 
                 <section class="industries" id="#industries">
-                    <h2 class="title">Industries</h2>
-                    <h3 class="subtitle">Desk work or field work, we’ve got you covered</h3>
-                    <p class="paragraph">Businesses in more than 100 different industries track and automate with Nimbly.</p>
-                    <a class="industries__item-link" href="#">
-                        <img class="industries__item-icon" src="images/food.svg" alt="food & beverage">
-                        <p class="industries__item-title">Food & Beverage</p>
-                        <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
-                    </a>
-                    <a class="industries__item-link" href="#">
-                        <img class="industries__item-icon" src="images/retail.svg" alt="retail">
-                        <p class="industries__item-title">Retail</p>
-                        <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
-                    </a>
-                    <a class="industries__item-link" href="#">
-                        <img class="industries__item-icon" src="images/manufacturing.svg" alt="manufacturing">
-                        <p class="industries__item-title">Manufacturing</p>
-                        <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
-                    </a>
-                    <a class="industries__item-link" href="#">
-                        <img class="industries__item-icon" src="images/agriculture.svg" alt="agriculture">
-                        <p class="industries__item-title">Agriculture</p>
-                        <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
-                    </a>
-                    <a class="section-link" href="#" href="#">
-                        <p>Select your Industry</p>
-                        <img src="images/arrow-link.svg" alt="arrow">
-                    </a>
+                    <div>
+                        <h2 class="title">Industries</h2>
+                        <h3 class="subtitle">Desk work or field work, we’ve got you covered</h3>
+                        <p class="paragraph">Businesses in more than 100 different industries track and automate with Nimbly.</p>
+                        <a class="industries__item-link" href="#">
+                            <img class="industries__item-icon" src="images/food.svg" alt="food & beverage">
+                            <p class="industries__item-title">Food & Beverage</p>
+                            <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
+                        </a>
+                        <a class="industries__item-link" href="#">
+                            <img class="industries__item-icon" src="images/retail.svg" alt="retail">
+                            <p class="industries__item-title">Retail</p>
+                            <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
+                        </a>
+                        <a class="industries__item-link" href="#">
+                            <img class="industries__item-icon" src="images/manufacturing.svg" alt="manufacturing">
+                            <p class="industries__item-title">Manufacturing</p>
+                            <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
+                        </a>
+                        <a class="industries__item-link" href="#">
+                            <img class="industries__item-icon" src="images/agriculture.svg" alt="agriculture">
+                            <p class="industries__item-title">Agriculture</p>
+                            <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
+                        </a>
+                        <a class="section-link" href="#" href="#">
+                            <p>Select your Industry</p>
+                            <img src="images/arrow-link.svg" alt="arrow">
+                        </a>
+                    </div>
                     <img class="industries__image" src="images/industries.png" alt="indusrties">
                 </section>
 
@@ -203,8 +208,8 @@
                     <h2 class="title">CUSTOMER SAY</h2>
                     <h3 class="subtitle">See how businesses like yours found answers with Nimbly</h3>
                     <p class="paragraph">From start-ups to enterprises, we’ve helped transform operations for clients from various industrial backgrounds.</p>
-                    <img class="insight__image" src="images/insight-picture.png" alt="client photo">
                     <div class="insight__feedback">
+                        <img class="insight__image" src="images/insight-picture.png" alt="client photo">
                         <p class="insight__feedback-text">Nimbly speeds up our issue resolution in Kopi Kenangan. 
                             With Nimbly's issue tracker, the headquarters can receive real-time notifications from outlets and follow them up instantly. 
                             Nimbly not only reduces paper use, but also simplifies knowledge sharing, smoothens the information flow, 
@@ -244,9 +249,11 @@
 
             <footer class="footer">
                 <div class="footer__top">
-                    <img class="footer__logo" src="images/logo-footer.svg" alt="Nimbly">
-                    <p class="footer__paragraph">Digitize your business operations and gain real-time analytics on your team progress anytime, anywhere.</p>
-                    <img class="footer__certificationcode" src="images/certification.png" alt="certification qr code">
+                    <div>
+                        <img class="footer__logo" src="images/logo-footer.svg" alt="Nimbly">
+                        <p class="footer__paragraph">Digitize your business operations and gain real-time analytics on your team progress anytime, anywhere.</p>
+                        <img class="footer__certificationcode" src="images/certification.png" alt="certification qr code">
+                    </div>
                     <div class="footer__list-container">
                         <h4 class="footer__title">Nimbly</h4>
                         <ul class="footer__list">

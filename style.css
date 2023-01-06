@@ -7,6 +7,7 @@ h1, h2, h3, h4, p, ul, li, button{
 
 .body{
     min-width: 375px;
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     background-image: url(images/background-header.png);
@@ -15,12 +16,15 @@ h1, h2, h3, h4, p, ul, li, button{
 }
 
 @media screen and (min-width: 1280px) {
-    body{
+    .body{
         max-width: 1920px;
         margin: 0 auto;
     }
 }
+
 .topbar{
+    width: 338px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-top: 17px;
@@ -322,6 +326,17 @@ h1, h2, h3, h4, p, ul, li, button{
     width: 309px;
 }
 
+.video__container{
+    width: 343px;
+    height: 193px;
+    margin: 0 auto;
+}
+
+.video__item{
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (min-width: 1280px) {
     .title{
         font-size: 20px;
@@ -342,6 +357,11 @@ h1, h2, h3, h4, p, ul, li, button{
         font-size: 18px;
         line-height: 32px;
         margin-bottom: 48px;
+    }
+
+    .video__container{
+        width: 674px;
+        height: 380px;
     }
 }
 
@@ -450,12 +470,12 @@ h1, h2, h3, h4, p, ul, li, button{
     }
 
     .features__item{
-        width: 193px;
+        width: auto;
         position: unset;
     }
 
     .features__item-link{
-        padding: 16px;
+        padding: 16px 12px;
         margin: 0;
     }
 
@@ -466,6 +486,7 @@ h1, h2, h3, h4, p, ul, li, button{
     .features__item_active{
         width: 216px;
         height: 66px;
+        padding: 0 4px;
         background-color: #fff;
         border-radius: 75px;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
@@ -716,9 +737,18 @@ h1, h2, h3, h4, p, ul, li, button{
     margin: 0 auto;
 }
 
+.industries .title{
+    margin-left: 0;
+}
+
 .industries .subtitle{
     width: 285px;
+    margin-left: 0;
     margin-bottom: 12px;
+}
+
+.industries .paragraph{
+    margin-left: 0;
 }
 
 .industries__item-link{
@@ -742,6 +772,7 @@ h1, h2, h3, h4, p, ul, li, button{
 
 .industries__item-icon{
     width: 32px;
+    margin-left: 16px;
     margin-right: 16px;
 }
 
@@ -779,7 +810,6 @@ h1, h2, h3, h4, p, ul, li, button{
     }
 
     .industries .title{
-        margin: 0;
         margin-bottom: 4px;
         margin-top: 35px;
     }
@@ -787,12 +817,10 @@ h1, h2, h3, h4, p, ul, li, button{
     .industries .subtitle{
         width: 569px;
         line-height: 72px;
-        margin: 0;
         margin-bottom: 16px;
     }
 
     .industries .paragraph{
-        margin: 0;
         margin-bottom: 36px;
     }
 

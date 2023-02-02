@@ -977,7 +977,7 @@ h1, h2, h3, h4, p, ul, li, button{
     }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1600px) {
     .insight__feedback{
         margin-left: 700px;
     }

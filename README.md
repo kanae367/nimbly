@@ -1,6 +1,6 @@
 # Nimbly
 
-I don't know want to say about the website.
+I don't know what to say about the website.
 
 ## Functionality of the project
 

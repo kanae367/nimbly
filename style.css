@@ -1280,6 +1280,12 @@ select.form__input{
     box-shadow: 0 0 2px 1px white;
 }
 
+@media screen and (min-width: 1280px) {
+    .popup{
+        display: none;
+    }
+}
+
 .popup__nav-list{
     position: relative;
     padding: 30px;

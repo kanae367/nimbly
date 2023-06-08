@@ -869,7 +869,7 @@ a{
 .insight__feedback{
     width: 343px;
     transition: .5s opacity linear;
-    background-image: url(images/“.svg);
+    background-image: url(images/quotes.svg);
     background-repeat: no-repeat;
     background-color: white;
     background-size: 60px 50px;

@@ -5,12 +5,11 @@ const burger = document.querySelector('.topbar__nav');
 burger.addEventListener('click', () => popup.classList.add('popup_active'))
 
 popup.addEventListener('click', (e) => {
-    if(!(e.target.classList.contains('close-popup-btn') || e.target.classList.contains('popup__link'))) return;
+    if(e.target.classList.contains('popup__nav-list')) return;
     popup.classList.remove('popup_active');
 })
 
 //"Swiper"
-const insightSection = document.getElementById('insight');
 let feedbackId = 1;
 
 //creates btn elements based on slides amount
@@ -28,11 +27,12 @@ let feedbackId = 1;
 document.getElementById('switch-left').addEventListener('click', () => changeFeedback(--feedbackId));
 document.getElementById('switch-right').addEventListener('click', () => changeFeedback(++feedbackId));
 
+const insightFeedback = document.querySelector('.insight__feedback');
 const feedback = {
-    feedbackImage: insightSection.querySelector('.insight__image'),
-    feedbackText: insightSection.querySelector('.insight__feedback-text'),
-    feedbackUserName: insightSection.querySelector('.insight__user-name'),
-    feedbackUserInfo: insightSection.querySelector('.insight__user-info'),
+    feedbackImage: insightFeedback.querySelector('.insight__image'),
+    feedbackText: insightFeedback.querySelector('.insight__feedback-text'),
+    feedbackUserName: insightFeedback.querySelector('.insight__user-name'),
+    feedbackUserInfo: insightFeedback.querySelector('.insight__user-info'),
 
     setData: function(){
         this.feedbackImage.src = data[feedbackId].img,
@@ -42,10 +42,10 @@ const feedback = {
     },
 
     changeData: function(){
-        insightSection.style.opacity = 0;
+        insightFeedback.style.opacity = 0;
         setTimeout(() => {
             this.setData();
-            insightSection.style.opacity = 1;
+            insightFeedback.style.opacity = 1;
         }, 500)
     }
 }

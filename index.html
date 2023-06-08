@@ -8,9 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="preload" href="images/gigachad1.webp">
-        <link rel="preload" href="images/gigachad2.jpg">
-        <link rel="preload" href="images/gigachad3.jpg">
+        <link rel="preload" href="images/gigachad1.webp" as="image">
+        <link rel="preload" href="images/gigachad2.jpg" as="image">
+        <link rel="preload" href="images/gigachad3.jpg" as="image">
         <title>Nimbly</title>
     </head>
     <body>
@@ -47,22 +47,20 @@
                 </a>
                 <button class="request-button">Request Demo</button>
                 <div class="popup">
-                    <div class="container">
-                        <ul class="popup__nav-list">
-                            <a class="popup__link" href="#features">
-                                Features
-                            </a>
-                            <a class="popup__link" href="#howitworks">
-                                How it works
-                            </a>
-                            <a class="popup__link" href="#industries">
-                                Industries
-                            </a>
-                            <a class="popup__link" href="#insight">
-                                Insight
-                            </a>
-                            <div class="close-popup-btn"></div>
-                        </ul>
+                    <div class="popup__nav-list">
+                        <a class="popup__link" href="#features">
+                            Features
+                        </a>
+                        <a class="popup__link" href="#howitworks">
+                            How it works
+                        </a>
+                        <a class="popup__link" href="#industries">
+                            Industries
+                        </a>
+                        <a class="popup__link" href="#insight">
+                            Insight
+                        </a>
+                        <div class="close-popup-btn"></div>
                     </div>
                 </div>
             </header>
@@ -98,7 +96,7 @@
                     </div>
                 </section>
 
-                <section class="video">
+                <section id="video">
                     <h2 class="title">WAYS NIMBLY HELPS YOU</h2>
                     <h3 class="subtitle">
                         Helping you maximize operations management with digitization
@@ -106,12 +104,11 @@
                     <p class="paragraph">
                         Nimbly will digitize your business operations so you'll get real-time analytics on your team's progress anytime, anywhere even without an internet connection.
                     </p>
-                    <div class="video__container">
-                        <video class="video__item" controls>
-                            <source src="video/video.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                    <video class="video-element" controls>
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>
                 </section>
+
                 <section class="features" id="features">
                     <h2 class="title">OUR FEATURES</h2>
                     <h3 class="subtitle">
@@ -182,6 +179,7 @@
                 </section>
 
                 <section class="ourstats">
+                    <h2 hidden>Ourstats</h2>
                     <p class="paragraph">
                         We support various organizations to fundementally change the way we operate for a better future.
                     </p>
@@ -247,7 +245,7 @@
                             <p class="industries__item-title">Agriculture</p>
                             <img class="industries__item-arrow" src="images/arrow-features.svg" alt="arrow">
                         </a>
-                        <a class="section-link" href="#" href="#">
+                        <a class="section-link" href="#">
                             <p>Select your Industry</p>
                             <img src="images/arrow-link.svg" alt="arrow">
                         </a>
@@ -260,13 +258,13 @@
                     <h3 class="subtitle">See how businesses like yours found answers with Nimbly</h3>
                     <p class="paragraph">From start-ups to enterprises, we’ve helped transform operations for clients from various industrial backgrounds.</p>
                     <div class="insight__feedback">
-                        <img class="insight__image" src="" alt="client photo">
+                        <img class="insight__image" src="images/insight-picture.webp" alt="client photo">
                         <p class="insight__feedback-text">
                         </p>
                         <div class="insight__user">
                             <img class="insight__user-pic" src="images/user-logo.png" alt="client picture">
                             <div>
-                                <h4 class="insight__user-name"></h4>
+                                <h4 class="insight__user-name">Tondi Sihombing</h4>
                                 <p class="insight__user-info"></p>
                             </div>
                         </div>

@@ -364,6 +364,11 @@ a{
 
 .features__link{
     color: var(--main-green-color);
+    transition: .4s all linear;
+}
+
+.features__link:hover{
+    filter: brightness(.8);
 }
 
 .features__list{
@@ -500,10 +505,10 @@ a{
     }
 
     .features__item_active{
-        padding: 0 10px;
+        height: 100%;
+        overflow: hidden;
         background-color: #fff;
         border-radius: 75px;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
     }
 
     .features__item-link{
@@ -1058,16 +1063,19 @@ a{
     padding-bottom: 16px;
     padding-left: 24px;
     margin-bottom: 12px;
+    color: var(--main-black-color);
     margin-top: 15px;
-    color: rgba(0, 0, 0, 0.3);
     border-radius: 7px;
     background-color: #F7F8FA;
     border: none;
 }
 
+.form__input::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+}
+
 select.form__input{
     margin-bottom: 36px;
-    color: var(--main-black-color);
 }
 
 .request-button_submit{
